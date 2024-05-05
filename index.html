@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="shortcut icon" href="./icons8-microsoft-excel-48.png" type="image/x-icon">
+    <title>Excel Clone</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header-1">
+            <span>File</span>
+            <span class="home">Home</span>
+            <span>Insert</span>
+            <span>Layout</span>
+            <span>Help</span>
+        </div>
+        <div class="header-2">
+
+            <span class="material-icons" id="copy-btn">
+                content_copy
+                </span>
+
+            <span class="material-icons" id="cut-btn">
+                content_cut
+                </span>
+
+            <span class="material-icons" id="paste-btn">
+                content_paste
+                </span>
+
+            
+            <select name="fonts" id="font-family">
+                <option value="select">--font-family--</option>
+                <option value="serif">Serif</option>
+                <option value="sans-serif">Sans-serif</option>
+                <option value="monospace">Monospace</option>
+                <option value="cursive">Cursive</option>
+                <option value="fantasy">Fantasy</option>
+            </select>
+
+            <select name="font-size" id="font-size">
+                <option value="select">--font-size--</option>
+                <option value="20">8</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="24">24</option>
+                <option value="28">28</option>
+                <option value="32">32</option>
+                <option value="36">36</option>
+
+            </select>
+
+
+            <span class="material-icons" id="bold-btn">
+                format_bold
+                </span>
+            
+            <span class="material-icons" id="italics-btn">
+                format_italic
+                </span>
+
+            <span class="material-icons" id="underline-btn">
+                format_underlined
+                </span>
+
+               
+            <span class="material-icons" id="left-align">
+                format_align_left
+                </span>
+
+            <span class="material-icons" id="center-align">
+                format_align_center
+                </span>
+
+            <span class="material-icons" id="right-align">
+                format_align_right
+                </span>
+
+
+            <label>
+                <input type="color" name="color" id="text-color" />
+                <span class="material-icons" >
+                    
+                    format_color_text
+                    
+                    </span>
+              </label>
+
+
+              <label>
+                <input type="color" name="color" id="bg-color" />
+                <span class="material-icons" >
+                    
+                    format_color_fill
+                    
+                    </span>
+              </label>
+              
+            <!-- <span class="material-icons" >
+     
+                format_color_fill
+                </span> -->
+
+            <span class="material-icons">
+                cloud_download
+                </span>
+
+            <span class="material-icons">
+                cloud_upload
+                </span>
+
+
+        </div>
+        <div class="header-3">
+            <p id="current-cell"></p>
+            <img class="formula-fx" src="./formula-fx.png" alt="formula-fx">
+
+            <input type="text">
+        </div>
+
+    </div>
+   <div class="mainBody">
+    
+    <table class="my-table">
+        <thead>
+          <tr id="table-heading-row">
+            <th class="cross"></th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+   </div>
+    <script src="./script.js"></script>
+</body>
+</html>
